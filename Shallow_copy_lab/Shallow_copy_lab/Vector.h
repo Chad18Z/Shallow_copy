@@ -25,8 +25,8 @@ public:
 	void print();
 	Vector& operator=(const Vector& v);
 private:
-	int m_x;
-	int m_y;
+	int* m_x = new int[0];
+	int* m_y = new int[0];
 };
 
 #endif
