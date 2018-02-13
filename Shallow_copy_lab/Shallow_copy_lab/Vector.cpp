@@ -2,20 +2,20 @@
 
 Vector::Vector()
 {
-	*m_x = 0;
-	*m_y = 0;
+	m_x = new int(0);
+	m_y = new int(0);
 }
 
 Vector::Vector(int x, int y)
 {
-	*m_x = x;
-	*m_y = y;
+	m_x = new int(x);
+	m_y = new int(y);
 }
 
 Vector::Vector(const Vector& v)
 {
-	*m_x = *v.m_x;
-	*m_y = *v.m_y;
+	m_x = new int(*v.m_x);
+	m_y = new int(*v.m_y);
 }
 
 Vector::~Vector()
